@@ -25,12 +25,15 @@
       }
 
       body {
+        padding: 0;
+        margin: 0;
+      }
+
+      .content {
         background-color: hsl(227, 13%, 86%);
         display: flex;
         align-items: center;
         height: 100vh;
-        padding: 0;
-        margin: 0;
       }
 
       .card {
@@ -88,18 +91,20 @@
     </style>
   </head>
   <body>
-    <div class="card">
-      <div class="card-body">
-        <img src="./images/image-qr-code.png" alt="QR code" />
+    <main class="content">
+      <div class="card">
+        <div class="card-body">
+          <img src="./images/image-qr-code.png" alt="QR code" />
+        </div>
+        <div class="card-footer">
+          <h1>Improve your front-end skills by building projects</h1>
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
       </div>
-      <div class="card-footer">
-        <h1>Improve your front-end skills by building projects</h1>
-        <p>
-          Scan the QR code to visit Frontend Mentor and take your coding skills
-          to the next level
-        </p>
-      </div>
-    </div>
+    </main>
   </body>
 </html>
 
